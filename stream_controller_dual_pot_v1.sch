@@ -458,9 +458,9 @@ Text GLabel 3400 4800 0    50   BiDi ~ 0
 USB_D+
 Text GLabel 3400 4900 0    50   BiDi ~ 0
 USB_D-
-Text GLabel 4350 4700 2    50   Output ~ 0
+Text GLabel 4350 4800 2    50   Output ~ 0
 RXD0
-Text GLabel 4350 4800 2    50   Input ~ 0
+Text GLabel 4350 4700 2    50   Input ~ 0
 TXD0
 Text GLabel 9200 3900 2    50   Input ~ 0
 RXD0
