@@ -11,3 +11,8 @@ Le but du projet étant mouvant, il risque que ça meuve. A ce stade néanmoins,
 
 J'en suis à la v1 qui est censée être assez facile à fabriquer.
 La v2 devrait être modulaire avec la possibilité de rajouter des blocs en chaîne sur les côtés. J'ai déjà créé un repo avec les fichiers OpenSCAD pour le boitier ici : https://github.com/vpaeder/openscad_modbox
+
+Voilà quelques images pour donner une idée du résultat :
+![Aperçu du modèle - vue de face](https://user-images.githubusercontent.com/6388158/117354782-6f562a00-aeba-11eb-8617-6047383ab3d2.png)
+![Aperçu du modèle - vue de dos](https://user-images.githubusercontent.com/6388158/117355085-c6f49580-aeba-11eb-80c9-b12c510e7ffe.png)
+![Aperçu du modèle - vue interne](https://user-images.githubusercontent.com/6388158/117355234-fc997e80-aeba-11eb-93bc-33b7f39d5f47.png)
