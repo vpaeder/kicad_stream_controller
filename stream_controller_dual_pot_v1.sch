@@ -1178,4 +1178,6 @@ F 3 "" H 4800 5550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 5200 4800 5250
+Text GLabel 4250 5300 2    50   Output ~ 0
+EN
 $EndSCHEMATC
