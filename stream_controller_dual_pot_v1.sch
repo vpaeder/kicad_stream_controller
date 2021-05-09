@@ -490,7 +490,7 @@ U 1 1 6061DF18
 P 3050 800
 F 0 "J_BAT1" V 2988 612 50  0000 R CNN
 F 1 "Conn_01x02_Female" V 2897 612 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 800 50  0001 C CNN
+F 2 "misc_vp:CLM-101-02-L-D" H 3050 800 50  0001 C CNN
 F 3 "~" H 3050 800 50  0001 C CNN
 	1    3050 800 
 	0    -1   -1   0   
@@ -712,7 +712,7 @@ Wire Wire Line
 Connection ~ 4900 2250
 Wire Wire Line
 	4900 2250 5150 2250
-Text GLabel 7400 3400 0    50   Input ~ 0
+Text GLabel 7400 2850 0    50   Input ~ 0
 VBAT_MON
 Wire Wire Line
 	8350 4400 8450 4400
@@ -739,15 +739,15 @@ Wire Wire Line
 	6100 2250 6100 2900
 Text GLabel 9100 2650 2    50   BiDi ~ 0
 TFT_CS
-Text GLabel 9400 2850 2    50   BiDi ~ 0
+Text GLabel 9100 2950 2    50   BiDi ~ 0
 TFT_RESET
-Text GLabel 7400 2750 0    50   BiDi ~ 0
+Text GLabel 7400 3200 0    50   BiDi ~ 0
 TFT_YD
-Text GLabel 7400 2850 0    50   BiDi ~ 0
+Text GLabel 7400 3300 0    50   BiDi ~ 0
 TFT_XL
-Text GLabel 7400 2950 0    50   BiDi ~ 0
+Text GLabel 7400 3400 0    50   BiDi ~ 0
 TFT_YU
-Text GLabel 7400 3050 0    50   BiDi ~ 0
+Text GLabel 7400 3500 0    50   BiDi ~ 0
 TFT_XR
 Text GLabel 9100 3050 2    50   BiDi ~ 0
 TFT_DC
@@ -799,15 +799,13 @@ Text GLabel 6450 3500 2    50   Input ~ 0
 POT1
 Text GLabel 6750 2750 2    50   Input ~ 0
 POT2
-Text GLabel 9100 2950 2    50   Input ~ 0
+Text GLabel 7400 2750 0    50   Input ~ 0
 POT1
 Text GLabel 9100 3350 2    50   Input ~ 0
 BAT_CHRG
 Text Label 2850 1250 0    50   ~ 0
 VBAT
-Text GLabel 9100 2750 2    50   Input ~ 0
-POT2
-Text GLabel 9400 2750 2    50   Input ~ 0
+Text GLabel 9100 2850 2    50   Input ~ 0
 FLASH
 $Comp
 L Device:R R6
@@ -1049,25 +1047,21 @@ Text GLabel 4975 5200 2    50   BiDi ~ 0
 FLASH
 Text GLabel 4250 5100 2    50   BiDi ~ 0
 POT2
-Wire Wire Line
-	9400 2750 9400 2850
 $Comp
 L Device:Q_PMOS_GDS Q2
 U 1 1 6066B05A
 P 10100 4100
 F 0 "Q2" H 10305 4146 50  0000 L CNN
 F 1 "Q_PMOS_GDS" H 10305 4055 50  0000 L CNN
-F 2 "Package_DFN_QFN:Diodes_DFN1006-3" H 10300 4200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10300 4200 50  0001 C CNN
 F 3 "~" H 10100 4100 50  0001 C CNN
 	1    10100 4100
 	0    -1   -1   0   
 $EndComp
 Text GLabel 10100 4300 0    50   Input ~ 0
 LED_PWM
-Text GLabel 7400 3600 0    50   Input ~ 0
+Text GLabel 9100 3250 2    50   Input ~ 0
 LED_PWM
-Wire Wire Line
-	9400 2850 9100 2850
 Text GLabel 3450 3100 2    50   Output ~ 0
 EN
 Wire Wire Line
@@ -1180,4 +1174,26 @@ Wire Wire Line
 	4800 5200 4800 5250
 Text GLabel 4250 5300 2    50   Output ~ 0
 EN
+Text GLabel 7400 3050 0    50   Input ~ 0
+POT2
+$Comp
+L Device:D_Zener D?
+U 1 1 609F24D1
+P 2850 1050
+F 0 "D?" V 2804 1130 50  0000 L CNN
+F 1 "5.42V" V 2895 1130 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 2850 1050 50  0001 C CNN
+F 3 "~" H 2850 1050 50  0001 C CNN
+	1    2850 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 1250 2850 1200
+Wire Wire Line
+	3050 1000 2925 1000
+Wire Wire Line
+	2925 1000 2925 900 
+Wire Wire Line
+	2925 900  2850 900 
+Connection ~ 3050 1000
 $EndSCHEMATC
